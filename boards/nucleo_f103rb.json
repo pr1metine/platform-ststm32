@@ -26,6 +26,7 @@
     "mbed",
     "libopencm3",
     "stm32cube",
+    "spl",
     "zephyr"
   ],
   "name": "ST Nucleo F103RB",

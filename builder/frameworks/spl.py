@@ -85,7 +85,9 @@ env.Append(
              "variants", board.get("build.mcu")[0:7], "src")
     ],
     LINKFLAGS=[
-        "-nostartfiles"
+        # Had to comment this out due to linking errors specific to STM32F103RB:
+        # https://stackoverflow.com/questions/13734745/why-do-i-have-an-undefined-reference-to-init-in-libc-init-array
+        # "-nostartfiles"
     ]
 )
 
